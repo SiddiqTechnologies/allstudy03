@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../fonts/Noto_Serif/static/NotoSerif_Condensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('../fonts/Noto_Serif/static/NotoSerif_Condensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Noto_Serif/static/NotoSerif_Condensed-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+p, li, span, div, label, input, textarea, button{
+    font-family: 'Noto Serif', serif;
+}
