@@ -5,13 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host --port 3000",
-    "build": "tsc && vite build && npx cap sync",
+    "android": "tsc && vite build && npx cap sync android && npx cap build android",
+    "build": "tsc && vite build && npx cap sync android && npx cap open android",
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
-    "lint": "eslint"
+    "lint": "eslint",
+    "kem": "adb kill-server && adb start-server && C:\\Users\\siddi\\AppData\\Local\\Android\\Sdk\\tools\\emulator @Kem"
   },
   "dependencies": {
+    "@capacitor/android": "6.0.0",
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.0.0",
     "@capacitor/haptics": "6.0.0",
@@ -21,15 +24,15 @@
     "@capacitor/status-bar": "6.0.0",
     "@ionic/react": "7.0.0",
     "@ionic/react-router": "7.0.0",
-    "@types/react-router": "5.1.20",
     "@ionic/storage": "4.0.0",
+    "@types/react-router": "5.1.20",
     "@types/react-router-dom": "5.3.3",
     "ionicons": "7.0.0",
+    "mixpanel-browser": "2.49.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router": "5.3.4",
-    "react-router-dom": "5.3.4",
-    "mixpanel-browser": "2.49.0"
+    "react-router-dom": "5.3.4"
   },
   "devDependencies": {
     "@capacitor/cli": "6.0.0",
